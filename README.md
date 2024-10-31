@@ -21,6 +21,15 @@ This application is designed to help students and professionals visualize the ou
    ```bash
    git clone <repository_url>
 
+2. Install Required Packages
+   ```bash
+   pip install -r requirements.txt
+
+3. Run the Application
+   ```bash
+   streamlit run main.py
+
+
 ### Encoding Techniques
 | Encoding Type           | Description                                                                                 |
 |-------------------------|---------------------------------------------------------------------------------------------|
