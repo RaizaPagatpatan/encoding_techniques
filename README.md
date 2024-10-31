@@ -20,3 +20,15 @@ This application is designed to help students and professionals visualize the ou
 1. **Clone or Download the Repository**: 
    ```bash
    git clone <repository_url>
+
+### Encoding Techniques
+| Encoding Type           | Description                                                                                 |
+|-------------------------|---------------------------------------------------------------------------------------------|
+| **NRZ-L**               | A constant positive or negative voltage represents a 1 or 0.                                |
+| **NRZ-I**               | Voltage change occurs to signify a 1; no change signifies a 0.                              |
+| **Bipolar AMI**         | Uses three voltage levels (positive, zero, negative) to represent binary data uniquely.     |
+| **Pseudoternary**       | Similar to Bipolar AMI, but alternating voltage states represent binary 0 instead of 1.     |
+| **Manchester**          | Bit is represented by a transition in the middle of the bit period.                         |
+| **Differential Manchester** | Encoding based on transitions at the beginning of each bit period.                      |
+
+
