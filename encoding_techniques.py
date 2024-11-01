@@ -16,3 +16,14 @@ def nrz_i(data):
 
     return output
 
+def bipolar_ami(data):
+    return 0
+
+def pseudoternary(data):
+    return 0
+
+def manchester(data):
+    return 0
+
+def differential_manchester(data):
+    return 0
