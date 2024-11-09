@@ -9,7 +9,7 @@ st.write("Enter digital data (e.g., '101010') and select an encoding technique t
 
 data = st.text_input("Enter digital data (binary):")
 state = st.selectbox("Select State", ["Low", "High"])
-
+# encoded_data = nrz_i(data, state)
 # Select Encoding Technique
 technique = st.selectbox("Select Encoding Technique", [
     "NRZ-L", "NRZ-I", "Bipolar AMI", "Pseudoternary", "Manchester", "Differential Manchester"
@@ -22,15 +22,15 @@ if st.button("Generate Signal") and data:
         if technique == "NRZ-L":
             encoded_signal = nrz_l(data)
         elif technique == "NRZ-I":
-            encoded_signal = nrz_i(data)
+            encoded_signal = nrz_i(data, state)
         elif technique == "Bipolar AMI":
             encoded_signal = bipolar_ami(data)
         elif technique == "Pseudoternary":
-            encoded_signal = pseudoternary(data)
+            encoded_signal = pseudoternary(data, state)
         elif technique == "Manchester":
             encoded_signal = manchester(data)
         elif technique == "Differential Manchester":
-            encoded_signal = differential_manchester(data)
+            encoded_signal = differential_manchester(data, state)
 
         # Plot and display the signal
         fig = plot_signal(encoded_signal, f"{technique} Encoding")
