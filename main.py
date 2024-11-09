@@ -1,5 +1,5 @@
 import streamlit as st
-from encoding_techniques import nrz_l, nrz_i
+from encoding_techniques import nrz_l, nrz_i, bipolar_ami, pseudoternary, manchester, differential_manchester
 from plot_utils import plot_signal
 from data_validation import is_binary_string
 
@@ -22,6 +22,14 @@ if st.button("Generate Signal") and data:
             encoded_signal = nrz_l(data)
         elif technique == "NRZ-I":
             encoded_signal = nrz_i(data)
+        elif technique == "Bipolar AMI":
+            encoded_signal = bipolar_ami(data)
+        elif technique == "Pseudoternary":
+            encoded_signal = pseudoternary(data)
+        elif technique == "Manchester":
+            encoded_signal = manchester(data)
+        elif technique == "Differential Manchester":
+            encoded_signal = differential_manchester(data)
 
         # Plot and display the signal
         fig = plot_signal(encoded_signal, f"{technique} Encoding")
