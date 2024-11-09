@@ -1,0 +1,3 @@
+git checkout feature/encoding_techniques
+git checkout feature/plot_utils
+git checkout main

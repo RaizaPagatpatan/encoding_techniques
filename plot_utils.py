@@ -3,12 +3,30 @@ import numpy as np
 
 def plot_signal(data, title):
     """Generates a step plot for a digital signal."""
+
+    where_var = "post"
+    print(title)
+    if title == "NRZ-L Encoding":
+        where_var = "post"
+    elif title == "NRZ-I Encoding":
+        where_var = "post"
+    elif title == "Bipolar AMI Encoding":
+        where_var = "mid"
+    elif title == "Pseudoternary Encoding":
+        where_var = "mid"
+    elif title == "Manchester Encoding":
+        where_var = "mid"
+    elif title == "Differential Manchester Encoding":
+        where_var = "mid"
+    
+
     fig, ax = plt.subplots(figsize=(10, 2))
+    
     # Ensure the data is in the correct format for plotting (0 and 1)
     if all(d in [0, 1] for d in data):
-        ax.step(range(len(data)), data, where="mid", linewidth=2)
+        ax.step(range(len(data)), data, where=where_var, linewidth=2)
     else:
-        # Adjusting data for bipolar representation, if necessary
+        # data for bipolar representation
         adjusted_data = np.where(np.array(data) == -1, 0, data)  # Replace -1 with 0 for the plot
         ax.step(range(len(adjusted_data)), adjusted_data, where="mid", linewidth=2)
     
