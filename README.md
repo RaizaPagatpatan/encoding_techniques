@@ -4,8 +4,8 @@
 - **Course Number**: CS323
 - **Course Title**: Data Communications and Networking
 
-###
-Try the App: https://encoding-techniques-sczye.streamlit.app/ 
+###Try the App 
+https://encoding-techniques-sczye.streamlit.app/ 
 
 ### Project Objective
 This application is designed to help students and professionals visualize the output of digital signals based on digital data inputs, using a range of encoding techniques. The goal is to deepen understanding of signal transmission and the different encoding methods commonly used in digital communications.
