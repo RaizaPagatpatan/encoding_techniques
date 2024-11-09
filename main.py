@@ -8,6 +8,7 @@ st.write("Enter digital data (e.g., '101010') and select an encoding technique t
 
 
 data = st.text_input("Enter digital data (binary):")
+state = st.selectbox("Select State", ["Low", "High"])
 
 # Select Encoding Technique
 technique = st.selectbox("Select Encoding Technique", [

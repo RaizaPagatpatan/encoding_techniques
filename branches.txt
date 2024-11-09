@@ -1,0 +1,4 @@
+git checkout encoding-techniques
+git checkout plot-utils
+git checkout data-validation
+git checkout main
