@@ -1,4 +1,3 @@
-git checkout encoding-techniques
-git checkout plot-utils
-git checkout data-validation
+git checkout feature/encoding_techniques
+git checkout feature/plot_utils
 git checkout main
