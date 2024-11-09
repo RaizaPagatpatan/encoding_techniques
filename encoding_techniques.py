@@ -3,7 +3,7 @@ import numpy as np
 def nrz_l(data):
     """Non-Return-to-Zero Level (NRZ-L) encoding."""
 
-    return [1 if bit == '1' else -1 for bit in data]
+    return [1 if bit == '1' else 0 for bit in data]
 
 def nrz_i(data):
     """Non-Return-to-Zero Inverted (NRZ-I) encoding."""
